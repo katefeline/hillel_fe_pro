@@ -17,22 +17,21 @@ const movies = [
 const cart = [];
 
 
-function addToCart(id, cost) {
+function addToCart(id) {
     let idMovie = movies.find(movie => movie.id === id);
     return cart.push(idMovie);
 }
 
 function printCheck() {
     let i = 1;
-    let movieName = cart.forEach(element => console.log(`${i++}`, '-', element.name, '-', element.cost));
-    return movieName;
+    cart.forEach(element => console.log(`${i++}`, '-', element.name, '-', element.cost));
 }
 
 
-addToCart(1);
-addToCart(6);
-addToCart(9);
-addToCart(13);
+addToCart(8);
+addToCart(3);
+addToCart(4);
+addToCart(10);
 
 printCheck();
 
