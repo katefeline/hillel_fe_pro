@@ -231,4 +231,16 @@ const users = [
     }
   ];
 
-  console.log(users);
+
+let searchInObject = (params) => {
+  let key = Object.keys(params)[0];
+
+  return findUser = users.find((user) => {
+    return user[key] === params[key];
+  })
+
+
+}
+
+
+console.log(searchInObject({"email": "Nathan@yesenia.net"}));
