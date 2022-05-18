@@ -10,6 +10,7 @@ body {
     padding: 100px;
     background-color: darkgray;
     border-radius: 30px;
+    width: 500px;
 }
 
 input {

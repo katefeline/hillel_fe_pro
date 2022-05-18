@@ -5,13 +5,17 @@ addToDo.addEventListener('click', function() {
     let newToDo = toDo.value;
     let div = document.createElement('div');
     div.style.display = 'flex';
+    div.style.width = '500px';
+    div.style.borderBottom = '1px solid black';
+    div.style.padding = '10px 100px 0 0';
+    div.style.marginLeft = '80px';
+    div.style.justifyContent = 'space-between';
     let paragraph = document.createElement("p");
     paragraph.style.margin = '15px';
     paragraph.style.fontSize = '25px';
     paragraph.style.display = 'flex';
     paragraph.style.justifyContent = 'center';
     paragraph.style.paddingBottom = '15px';
-    paragraph.style.borderBottom = '1px solid black';
     let paragraphText = document.createTextNode(newToDo[0].toUpperCase() + newToDo.slice(1));
     paragraph.appendChild(paragraphText);
     let checkbox = document.createElement('input');
@@ -22,7 +26,11 @@ addToDo.addEventListener('click', function() {
     div.appendChild(checkbox);
     toDo.value = '';
 
-    if (checkbox.checked === true) {
-        paragraphText.style.textDecoration = 'line-through';
-    }
+    checkbox.addEventListener('click', function() {
+        if (checkbox.checked === true) {
+            paragraph.style.textDecoration = 'line-through';
+        } else {
+            paragraph.style.textDecoration = 'none';
+        }
+    });
 })
