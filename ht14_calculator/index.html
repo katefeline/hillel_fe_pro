@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>HT14 calculator</title>
     <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+
 </head>
 <body>
 <div>
@@ -55,7 +57,7 @@
     <button data-number>
         0
     </button>
-    <button data-operator onclick="calculations()">
+    <button id="equal" data-operator onclick="calculations()">
         =
     </button>
     <button id="clear" onclick="displayClear()">
@@ -65,7 +67,5 @@
         .
     </button>
 </div>
-
-<script src="./script.js"></script>
 </body>
 </html>
