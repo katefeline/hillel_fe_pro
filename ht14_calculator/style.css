@@ -1,0 +1,43 @@
+* {
+    background-color: lightgray;
+    margin: 0 auto;
+}
+
+body {
+    padding-top: 50px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.calculator {
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+}
+
+button {
+    font-size: 24px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5%;
+    box-shadow: 1px 1px 0 0;
+    outline: none;
+}
+
+button:hover {
+    box-shadow: 0 0 1px 1px;
+}
+
+#result {
+    display: block;
+    width: 400px;
+    height: 30px;
+    font-size: 24px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px black solid;
+    box-shadow: 1px 1px 0 0;
+    text-align: end;
+}

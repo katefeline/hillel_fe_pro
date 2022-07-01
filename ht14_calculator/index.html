@@ -1,10 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>HT14 calculator</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-$END$
+<div>
+    <h1>Let's calculate something!</h1>
+</div>
+<div class="calculator">
+    <div id="result" data-display>
+
+    </div>
+    <button data-operator>
+        +
+    </button>
+    <button data-operator>
+        -
+    </button>
+    <button data-operator>
+        *
+    </button>
+    <button data-operator>
+        /
+    </button>
+    <button data-number>
+        1
+    </button>
+    <button data-number>
+        2
+    </button>
+    <button data-number>
+        3
+    </button>
+    <button data-number>
+        4
+    </button>
+    <button data-number>
+        5
+    </button>
+    <button data-number>
+        6
+    </button>
+    <button data-number>
+        7
+    </button>
+    <button data-number>
+        8
+    </button>
+    <button data-number>
+        9
+    </button>
+    <button data-number>
+        0
+    </button>
+    <button data-operator onclick="calculations()">
+        =
+    </button>
+    <button id="clear" onclick="displayClear()">
+        AC
+    </button>
+    <button id="point" onclick="displayPoint()">
+        .
+    </button>
+</div>
+
+<script src="./script.js"></script>
 </body>
 </html>
