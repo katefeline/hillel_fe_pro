@@ -1,0 +1,79 @@
+body {
+    background-color: pink;
+    color: black;
+    font-size: 16px;
+}
+
+.container {
+    max-width: 1440px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.title {
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.clicker-box {
+    height: 500px;
+    width: 700px;
+    background-color: #0c1b4e;
+    border-radius: 5px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.clicker-box__inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clicker-box__number {
+    font-size: 200px;
+    text-align: center;
+    min-width: 300px;
+    width: max-content;
+    max-width: 512px;
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-weight: 700;
+}
+
+.clicker-box__button {
+    font-size: 30px;
+    font-weight: 700;
+    padding: 10px 20px;
+    margin: 0 5px;
+    border: 1px solid rgb(248, 90, 235);
+    color: rgb(248, 90, 235);
+    background-color: transparent;
+    transition-property:color,  background-color, border-color;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.clicker-box__button:hover {
+    color: #fff;
+    border-color: #fff;
+    background-color: rgb(248, 90, 235);
+}
+
+.wrapper {
+    color: #000;
+}
+
+.list {
+    color: #000;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
